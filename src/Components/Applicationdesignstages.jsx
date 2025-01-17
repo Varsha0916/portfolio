@@ -244,31 +244,57 @@ const DesignStages = () => {
         className="h-[845.71px] w-[1000px] top-[6574px] left-[140px] ml-0 item-end"
       />
 
-<div className="flex justify-center items-center space-x-6 border-y-[1px] border-y-[#222]  bg-black p-6 text-white group">
-      <div className="flex flex-col items-start text-start p-7">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">
-            <img src="./src/assets/images/mobile1.svg"/>
-        </div>
-        <h3 className="text-sm font-thin">Native iOS and Android App Development</h3>
-      </div>
-      <div className="h-40 border-l-[1px] border-[#222]"></div>
-      <div className="flex flex-col items-start w-1/4 text-start p-7 ">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">
-            <img src="./src/assets/images/i1.svg" className="m-[auto]"/>
-        </div>
-        <h3 className="text-sm font-thin">Cross-Platform App Development(React Native, Flutter)</h3>
-      </div>
-      <div className="h-40 border-l-[1px] border-[#222]"></div>
-      <div className="flex flex-col items-start text-start p-7">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">✨</div>
-        <h3 className="text-sm font-thin">App Prototyping and UI/UX Design Integration</h3>
-      </div>
-      <div className="h-40 border-l-[1px] border-[#222]"></div>
-      <div className="flex flex-col items-start text-start p-7">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">🔧</div>
-        <h3 className="text-sm font-thin">App Testing, Deployment, and Maintenance</h3>
-      </div>
+<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 border-y-[1px] border-y-[#222] mt-10 bg-black p-6 text-white group">
+  {/* Card 1 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/mobile1.svg" alt="Native iOS and Android App Development" className="h-[70%] w-[70%]" />
     </div>
+    <h3 className="text-sm font-thin">
+      Native iOS and Android App Development
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
+
+  {/* Card 2 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/mobile2.svg" alt="Cross-Platform App Development" className="h-[70%] w-[70%]" />
+    </div>
+    <h3 className="text-sm font-thin">
+      Cross-Platform App Development (React Native, Flutter)
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
+
+  {/* Card 3 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/mobile3.svg" alt="App Prototyping and UI/UX Design" className="h-[70%] w-[70%]" />
+    </div>
+    <h3 className="text-sm font-thin">
+      App Prototyping and UI/UX Design Integration
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
+
+  {/* Card 4 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/mobile4.svg" alt="App Testing and Maintenance" className="h-[70%] w-[70%]" />
+    </div>
+    <h3 className="text-sm font-thin">
+      App Testing, Deployment, and Maintenance
+    </h3>
+  </div>
+</div>
+
 <p className="text-center text-neutral-500 text-[24px] px-[50px] leading-10 max-w-[1300px] mx-auto mt-9">
         Our mobile app development process begins with understanding your unique requirements, target audience, and
         business objectives to establish a strong foundation. We then craft intuitive user interfaces and develop feature-
@@ -298,31 +324,58 @@ const DesignStages = () => {
         className="h-[845.71px] w-[1180px] top-[6574px] left-[140px] ml-0 item-end"
       />
 
-<div className="flex justify-center items-center space-x-6 border-y-[1px] border-y-[#222]  bg-black p-6 text-white group">
-      <div className="flex flex-col items-start text-start w-1/4 p-7">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">
-            <img src="./src/assets/images/mobile1.svg"/>
-        </div>
-        <h3 className="text-sm font-thin">Front-End Development (HTML,<br /> CSS, JavaScript)</h3>
-      </div>
-      <div className="h-40 border-l-[1px] border-[#222]"></div>
-      <div className="flex flex-col items-start w-1/4 text-start w-1/4 p-7 ">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">
-            <img src="./src/assets/images/i1.svg" className="m-[auto]"/>
-        </div>
-        <h3 className="text-sm font-thin"> Back-End Development (PHP, <br />Python, Ruby)</h3>
-      </div>
-      <div className="h-40 border-l-[1px] border-[#222]"></div>
-      <div className="flex flex-col items-start text-start w-1/4 p-7">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">✨</div>
-        <h3 className="text-sm font-thin">Content Management System(CMS) Development(WordPress,<br /> Drupal)</h3>
-      </div>
-      <div className="h-40 border-l-[1px] border-[#222]"></div>
-      <div className="flex flex-col items-start text-start w-1/4 p-7">
-        <div className="text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] rounded-lg text-2xl  mb-2 group-hover:h-[100px] group-hover:w-[45%] duration-300">🔧</div>
-        <h3 className="text-sm font-thin">E-Commerce Platform Development (Magento, Shopify)</h3>
-      </div>
+<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 border-y-[1px] border-y-[#222] bg-black p-6 text-white group">
+  {/* Card 1 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/web1.svg" className="h-[70%] w-[70%]" alt="Frontend Development" />
     </div>
+    <h3 className="text-sm font-thin">
+      Front-End Development (HTML, <br /> CSS, JavaScript)
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
+
+  {/* Card 2 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/web2.svg" className="h-[70%] w-[70%]" alt="Backend Development" />
+    </div>
+    <h3 className="text-sm font-thin">
+      Back-End Development (PHP, <br /> Python, Ruby)
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
+
+  {/* Card 3 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/web3.svg" className="h-[70%] w-[70%]" alt="CMS Development" />
+    </div>
+    <h3 className="text-sm font-thin">
+      Content Management System (CMS) Development <br /> (WordPress, Drupal)
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
+
+  {/* Card 4 */}
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
+    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/web4.svg" className="h-[70%] w-[70%]" alt="E-Commerce Development" />
+    </div>
+    <h3 className="text-sm font-thin">
+      E-Commerce Platform Development <br /> (Magento, Shopify)
+    </h3>
+  </div>
+</div>
+
+
 
 
       <p className="text-center text-neutral-500 text-[24px] px-[50px] leading-[40px] max-w-[1300px] mx-auto mt-9">

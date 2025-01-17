@@ -5,25 +5,25 @@ const DesignServices = () => {
       src="./src/assets/images/mobapp1.svg"
       alt="Icon"
       className="width-[24px] h-[24px]"
-    />, width: "w-[197px]", top: "top-[1440px]" }, // Reduced from 1486px
+    />, width: "w-[197px]", top: "top-[1440px]" }, 
     
     { title: "Smooth Development", icon: <img
       src="./src/assets/images/mobapp2.svg"
       alt="Icon"
       className="width-[24px] h-[24px]"
-    />, width: "w-[283px]", top: "top-[1540px]" }, // Reduced from 1590px
+    />, width: "w-[283px]", top: "top-[1540px]" },
     
     { title: "User Experience", icon: <img
       src="./src/assets/images/mobapp3.svg"
       alt="Icon"
       className="width-[24px] h-[24px]"
-    />, width: "w-[218px]", top: "top-[1670px]" }, // Reduced from 1722px
+    />, width: "w-[218px]", top: "top-[1670px]" }, 
     
     { title: "Interactions", icon: <img
       src="./src/assets/images/mobapp4.svg"
       alt="Icon"
       className="width-[24px] h-[24px]"
-    />, width: "w-[175px]", top: "top-[1800px]" }, // Reduced from 1854px
+    />, width: "w-[175px]", top: "top-[1800px]" }, 
   ];
     
 
@@ -176,7 +176,7 @@ const DesignServices = () => {
 
           {/*Web Application*/}
           <h1 className="text-[32px] font-bold text-white flex mt-8">In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application</h1>
-<img className="h-[690.36px] w-[1210.36] t-[2620px] l-[500px] items-center justify-center" src='./src/assets/images/img4.png'/>
+<img className="h-[90%] w-[80%] t-[2620px] l-[500px] m-auto " src='./src/assets/images/img4.png'/>
 </div>
 
 

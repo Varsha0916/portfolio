@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <section className="bg-black h-scroll w-scroll flex items-center justify-center text-center flex-col overflow-hidden">
+    <section className="bg-black h-scroll w-screen flex items-center justify-center text-center flex-col overflow-hidden pb-20">
       <h1 className=" text-glow text-[50px] font-bold text-[#fe5d26] m-10">What We Do?</h1>
       <p className="text-[36px] text-center mb-8 text-gray-100" >
         We Develop Products That People Love to Use.
