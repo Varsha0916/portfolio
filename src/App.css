@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 4px 4px 30px #f48059,-2px -2px 38px #f2baa7 ,10px 0px 10px #cfb1a946, 
+    10px 0px 20px #e6cfcf1a, 
+    10px 0px 20px #d69d9d1e; 
+  }
+  .text-glow2 {
+    
+     text-shadow: 4px 4px 5px #f48059,
+     0px 0px 5px #f2baa7 ,-2px 0px 2px #cfb1a946, 
+    1px 0px 2px #e6cfcf1a, 
+    1px 0px 2px #d69d9d1e; 
+      
+  }
+
+  /* Add this to your global CSS file */
+.filter-orange {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(69%) saturate(748%) hue-rotate(356deg) brightness(102%) contrast(102%);
+}
+
+}
