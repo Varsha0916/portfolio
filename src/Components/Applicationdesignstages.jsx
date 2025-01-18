@@ -173,48 +173,57 @@ return (
 </div>
 
 {/* TRANSFORMATION */}
-      <section className="bg-black text-white flex flex-col items-left p-10 relative h-screen">
-        {/* Background Glow */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
-        <div className="relative z-10 w-full h-full">
-          {/* Step 1 */}
-          <div className="absolute -top-9 right-64 flex flex-col items-start gap-4 w-[380px] h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
-            <div className="text-[40px] font-bold text-gray-400 mb-[8px]">01.</div>
-            <img src="./src/assets/images/01page.svg" alt="Step 1 Icon" className="w-[300px] h-[214px] mb-1" />
-            <p className="text-gray-400 text-[14px] leading-[20px]">
-              We begin by understanding your vision, defining requirements, and creating a roadmap to ensure every aspect aligns with your business goals.
-            </p>
-          </div>
+<section className="bg-black text-white flex flex-col items-center p-10 relative h-auto sm:h-screen">
+  {/* Background Glow */}
+  <div className="absolute  bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
+  <div className="relative z-10 w-full">
+    {/* Step 1 */}
+    <div className="flex flex-col items-center sm:items-start md:absolute md:-top-9 md:right-44 lg:right-64 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px] mb-6 md:mb-0">
+      <div className="text-[40px] font-bold text-gray-400 mb-[8px]">01.</div>
+      <img
+        src="./src/assets/images/01page.svg"
+        alt="Step 1 Icon"
+        className="w-[300px] h-auto sm:h-[214px] mb-1"
+      />
+      <p className="text-gray-400 text-[14px] leading-[20px] text-center sm:text-left">
+        We begin by understanding your vision, defining requirements, and creating a roadmap to ensure every aspect aligns with your business goals.
+      </p>
+    </div>
 
-          {/* Step 2 */}
-          <div className="absolute top-[300px] -left-52 flex flex-col items-start gap-4 w-[380px] h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
-            <div className="text-[40px] font-bold text-gray-400 mb-[8px]">02.</div>
-            <img 
-  src="./src/assets/images/02page.svg" 
-  alt="Step 2 Icon" 
-  className="w-full sm:w-[300px] sm:h-[214px] h-auto mb-1 object-contain"
-/>
-            <p className="text-gray-400 text-[14px] leading-[20px]">
-              We bring your ideas to life using cutting-edge design and development practices, delivering solutions that are both functional and visually appealing.
-            </p>
-          </div>
+    {/* Step 2 */}
+    <div className="flex flex-col items-center sm:items-start md:absolute md:top-[250px] md:-left-40 lg:-left-52 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px] mb-6 md:mb-0">
+      <div className="text-[40px] font-bold text-gray-400 mb-[8px]">02.</div>
+      <img
+        src="./src/assets/images/02page.svg"
+        alt="Step 2 Icon"
+        className="w-full sm:w-[300px] sm:h-[214px] h-auto mb-1 object-contain"
+      />
+      <p className="text-gray-400 text-[14px] leading-[20px] text-center sm:text-left">
+        We bring your ideas to life using cutting-edge design and development practices, delivering solutions that are both functional and visually appealing.
+      </p>
+    </div>
 
-          {/* Step 3 */}
-          <div className="absolute top-[500px] left-52 flex flex-col items-start gap-4 w-[380px] h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
-            <div className="text-[40px] font-bold text-gray-400 mb-[8px]">03.</div>
-            <img src="./src/assets/images/03page.svg" alt="Step 3 Icon" className="w-[300px] h-[214px] mb-1" />
-            <p className="text-gray-400 text-[14px] leading-[20px]">
-              Rigorous testing ensures a flawless product, followed by seamless deployment to make your solution ready for the world.
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Step 3 */}
+    <div className="flex flex-col items-center sm:items-start md:absolute md:top-[480px] md:left-36 lg:left-52 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
+      <div className="text-[40px] font-bold text-gray-400 mb-[8px]">03.</div>
+      <img
+        src="./src/assets/images/03page.svg"
+        alt="Step 3 Icon"
+        className="w-[300px] h-auto sm:h-[214px] mb-1"
+      />
+      <p className="text-gray-400 text-[14px] leading-[20px] text-center sm:text-left">
+        Rigorous testing ensures a flawless product, followed by seamless deployment to make your solution ready for the world.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 
 {/*MOBILE DEVELOPMENT*/}
 
 
-<div className="flex flex-col sm:flex-row gap-2 ml-4 sm:ml-10 mr-auto mt-60 sm:mt-96 p-4 sm:p-10">
+<div className="flex flex-col sm:flex-row gap-2 ml-4 sm:ml-10 mr-auto mt-60 sm:mt-96 p-4 sm:p-10 md:mt-[700px] lg:mt-[500px]">
   <h1 className="text-[24px] sm:text-[32px] font-bold text-white flex items-start justify-start">
     <span className="text-[#fe5d26] underline ">M</span>obile Development
   </h1>

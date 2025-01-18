@@ -68,7 +68,6 @@ return (
 
   
        {/* Mobile Application*/}
-       <div className='w-full'>
        <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
     In<span className="text-[#fe5d26] underline ml-2">M</span>obile Application
@@ -82,37 +81,52 @@ return (
 
 
   
-        {/* Boxes */}
-        {boxes.map((box, index) => (
-          <div
-            key={index}
-            className={`absolute ${box.top} left-10 ${box.width} h-[10%] bg-transparent border border-orange-600 rounded-lg shadow-lg flex justify-between items-center px-4 gap-2`}
-            style={{
-              boxShadow:
-                "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
-            }}
-          >
-            <span className="text-orange-600 text-[20px] leading-[41px]">{box.title}</span>
-            <span className="text-xl">{box.icon}</span>
-          </div>
-        ))}
-  
-        {/* Gradient and Image Section */}
-  <div className="relative h-[594px] w-[870px] flex items-end rounded-tl-[24px] rounded-bl-[24px] mr-0 ml-[auto] bg-[#1d1d1f] mt-[50px]">
-  <div className="absolute top-1/4 right-0 transform translate-x-3/4 -translate-y-1/2">
-    <div className="w-[260px] h-[260px] bg-gradient-to-b from-[#7e3535] to-[#fe5d26] rounded-full"></div>
+<div className="w-full flex flex-col justify-between sm:flex-row lg:gap-10">
+  {/* Boxes Section */}
+  <div className="relative flex-col flex-wrap px-6 gap-6 my-10 flex justify-between">
+    {boxes.map((box, index) => (
+      <div
+        key={index}
+        className={`relative w-${box.width} h-auto bg-transparent border border-orange-600 rounded-lg shadow-lg flex justify-between items-center px-4 gap-2`}
+        style={{
+          boxShadow:
+            "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
+        }}
+      >
+        <span className="text-orange-600 text-[14px] sm:text-[20px] leading-[20px] sm:leading-[41px]">
+          {box.title}
+        </span>
+        <span className="text-base sm:text-xl">{box.icon}</span>
+      </div>
+    ))}
   </div>
 
-  <div className="relative">
-  <img
-  src="./src/assets/images/img3.png"
-  alt="Phones"
-  className="w-[820px] h-[458.75px] transform -translate-y-8"
-/>
+  {/* Image Section */}
+  <div className="relative h-auto lg:w-[70%]  ml-auto mr-0 sm:w-[80%] lg:w-full flex flex-col sm:flex-row items-center sm:items-end rounded-tl-[24px] rounded-bl-[24px] bg-[#1d1d1f] mt-[30px] sm:mt-[50px]">
+  {/* Gradient Circle */}
+<div className="absolute 
+  top-[45%] sm:top-[20%] md:top-[27%] lg:top-[25%] 
+  right-[-5%] sm:right-[-2%] md:right-[0%] lg:right-[-2%] 
+  transform 
+  translate-x-[50%] sm:translate-x-[60%] md:translate-x-[85%] lg:translate-x-[70%] 
+  -translate-y-[50%]">
+    <div className="w-[100px] sm:w-[160px] md:w-[220px] lg:w-[260px] h-[100px] sm:h-[160px] md:h-[220px] lg:h-[260px] bg-gradient-to-b from-[#7e3535] to-[#fe5d26] rounded-full"></div>
+  </div>
 
+  {/* Image Section */}
+  <div className="relative mx-auto pt-20 pr-10">
+    <img
+      src="./src/assets/images/img3.png"
+      alt="Phones"
+      className="w-[70%] mr-auto ml-0 h-auto top-auto bottom-10 sm:w-[400px]  md:w-[600px] lg:w-[750px] h-auto transform -translate-y-4 md:-translate-y-8 lg:-translate-y-10"
+    />
   </div>
 </div>
+
+
 </div>
+
+
   
         {/* Content Section */}
    <div className="bg-black text-white py-10 px-6 md:px-20">
