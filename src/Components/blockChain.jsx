@@ -124,7 +124,12 @@ const blockChain = () => {
     <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-semibold min-w-[90%] max-w-screen h-auto m-auto text-center">
     <span className="text-[#fe5d26] underline mt-[100px] ml-2">B</span>lockChain Technology
   </h2>
-  <img src='./src/assets/images/bc.svg' className='m-[auto] mb-0 mt-[80px] rotate-90'/>
+  <img 
+  src='./src/assets/images/bc.svg' 
+  className='m-auto mt-[80px] rotate-90 w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%] max-w-[600px]' 
+  alt="Blockchain" 
+/>
+
   <div className=" max-h-screen flex items-center justify-center ">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-9 z-5 mt-0 p-6 max-w-7xl hover:gap-4 transform-all duration-300">
         {blockchain.map((service) => (
@@ -144,8 +149,18 @@ const blockChain = () => {
         ))}
       </div>
     </div>
-    <p className="text-center text-gray-500 text-[24px] px-[50px] leading-[47px] max-w-[1300px] mt-10 m-auto">Revolutionize the way you do business with our cutting-edge blockchain solutions.<span className="text-blue-800"> Blockchain</span> is more than just a <br/>technology; it’s a transformative approach to achieving transparency, security, and efficiency across industries.<br/> Our expertise covers decentralized applications, smart contracts, and secure digital ledgers, enabling businesses<br/> to<span className="text-white"> streamline processes, reduce operational costs</span>, and <span className="text-white">build trust with stakeholders.</span><br/>
-    Whether you aim to optimize supply chains, implement cryptocurrency solutions, or <span className="text-white">safeguard sensitive data,</span> our<br/> blockchain services are designed to meet your unique challenges. Harness the power of blockchain to <span className="text-white">unlock new <br/>opportunities,</span> ensure data <span className="text-white">integrity,</span> and <span className="text-white">stay ahead</span> in a competitive digital landscape.</p>
+    <p className="text-center text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] px-[15px] sm:px-[20px] md:px-[30px] lg:px-[40px] leading-[24px] sm:leading-[30px] md:leading-[35px] lg:leading-[40px] max-w-[100%] lg:max-w-[1300px] mt-10 m-auto">
+  Revolutionize the way you do business with our cutting-edge blockchain solutions.
+  <span className="text-blue-800"> Blockchain</span> is more than just a <br />technology; it’s a transformative approach to achieving transparency, security, and efficiency across industries.
+  <br /> Our expertise covers decentralized applications, smart contracts, and secure digital ledgers, enabling businesses
+  <br /> to <span className="text-white">streamline processes, reduce operational costs</span>, and
+  <span className="text-white"> build trust with stakeholders.</span><br />
+  Whether you aim to optimize supply chains, implement cryptocurrency solutions, or
+  <span className="text-white">safeguard sensitive data,</span> our<br /> blockchain services are designed to meet your unique challenges. Harness the power of blockchain to
+  <span className="text-white"> unlock new <br /> opportunities,</span> ensure data
+  <span className="text-white"> integrity,</span> and <span className="text-white">stay ahead</span> in a competitive digital landscape.
+</p>
+
 </div>
 
     );

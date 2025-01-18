@@ -87,7 +87,7 @@ return (
     {boxes.map((box, index) => (
       <div
         key={index}
-        className={`relative w-${box.width} h-auto bg-transparent border border-orange-600 rounded-lg shadow-lg flex justify-between items-center px-4 gap-2`}
+        className={`relative w-${box.width} h-auto bg-transparent border border-orange-600 rounded-lg shadow-lg flex justify-between items-center px-4 gap-2 ml-10`}
         style={{
           boxShadow:
             "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
@@ -102,7 +102,7 @@ return (
   </div>
 
   {/* Image Section */}
-  <div className="relative h-auto lg:w-[70%]  ml-auto mr-0 sm:w-[80%] lg:w-full flex flex-col sm:flex-row items-center sm:items-end rounded-tl-[24px] rounded-bl-[24px] bg-[#1d1d1f] mt-[30px] sm:mt-[50px]">
+  <div className="relative h-auto lg:w-[70%]  ml-auto mr-0 sm:w-[80%]  flex flex-col sm:flex-row items-center sm:items-end rounded-tl-[24px] rounded-bl-[24px] bg-[#1d1d1f] mt-[30px] sm:mt-[50px]">
   {/* Gradient Circle */}
 <div className="absolute 
   top-[45%] sm:top-[20%] md:top-[27%] lg:top-[25%] 
@@ -118,7 +118,7 @@ return (
     <img
       src="./src/assets/images/img3.png"
       alt="Phones"
-      className="w-[70%] mr-auto ml-0 h-auto top-auto bottom-10 sm:w-[400px]  md:w-[600px] lg:w-[750px] h-auto transform -translate-y-4 md:-translate-y-8 lg:-translate-y-10"
+      className="w-[70%] mr-auto ml-0 h-auto top-auto bottom-10 sm:w-[400px]  md:w-[600px] lg:w-[750px] transform -translate-y-4 md:-translate-y-8 lg:-translate-y-10"
     />
   </div>
 </div>
@@ -166,9 +166,17 @@ return (
 
 
 {/*Web Application*/}
-<h1 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[36px] font-bold text-white flex mt-8 sm:mt-16 md:mt-20 lg:mt-24">
-  In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application
-</h1>
+
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+  <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
+    In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application
+  </h1>
+  <img
+    src="./src/assets/images/img5.svg"
+    alt="Icon"
+    className="h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] ml-2 item-end"
+  />
+</div>
 
 <img
   className="h-[60%] sm:h-[75%] md:h-[90%] lg:h-[95%] w-[80%] sm:w-[70%] md:w-[80%] lg:w-[85%] mx-auto mt-8 sm:mt-12 md:mt-16"

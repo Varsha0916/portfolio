@@ -44,7 +44,7 @@ const DesignStages = () => {
 return (
     <>
       {/* APPLICATION DESIGN STAGES */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-semibold relative text-glow2 w-full sm:w-[600px] md:w-[724px] lg:w-[800px] h-auto sm:h-[80px] md:h-[74px] lg:h-[90px] p-6 sm:p-8 md:p-[50px]">
+      <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-semibold relative text-glow2 w-full sm:w-[600px] md:w-[724px] lg:w-[800px] h-auto sm:h-[80px] md:h-[74px] lg:h-[90px] p-6 sm:p-8 md:p-[50px]">
   Application Design Stages
 </h1>
 
@@ -223,16 +223,17 @@ return (
 {/*MOBILE DEVELOPMENT*/}
 
 
-<div className="flex flex-col sm:flex-row gap-2 ml-4 sm:ml-10 mr-auto mt-60 sm:mt-96 p-4 sm:p-10 md:mt-[700px] lg:mt-[500px]">
-  <h1 className="text-[24px] sm:text-[32px] font-bold text-white flex items-start justify-start">
-    <span className="text-[#fe5d26] underline ">M</span>obile Development
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[350px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+  <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
+    In<span className="text-[#fe5d26] underline ml-2">M</span>obile Development
   </h1>
   <img
     src="./src/assets/images/img2.png"
     alt="Icon"
-    className="h-[30px] sm:h-[37px] w-[30px] sm:w-[37px] ml-0 sm:self-center"
+    className="h-[25px] sm:h-[30px] md:h-[37px] lg:h-[40px] ml-0 item-end"
   />
 </div>
+
 
 
       <img
@@ -241,15 +242,14 @@ return (
   className="h-auto max-h-[845px] w-full sm:w-[80%] md:w-[70%] lg:w-[60%] top-[6574px] left-[140px] ml-0 item-end"
 />
 
-
-<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 border-y-[1px] border-y-[#222] mt-10 bg-black p-6 text-white group">
+<div className="flex flex-col mt-10 md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 border-y-[1px] border-y-[#222] bg-black p-6 text-white group">
   {/* Card 1 */}
-  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
-    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
-      <img src="./src/assets/images/mobile1.svg" alt="Native iOS and Android App Development" className="h-[70%] w-[70%]" />
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
+    <div className="flex justify-center items-center text-orange-500  bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+      <img src="./src/assets/images/mobile1.svg" className="h-[70%] w-[70%]" alt="Native ios " />
     </div>
     <h3 className="text-sm font-thin">
-      Native iOS and Android App Development
+    Native iOS and Android App <br/>Development
     </h3>
   </div>
 
@@ -257,12 +257,12 @@ return (
   <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
 
   {/* Card 2 */}
-  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
     <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
-      <img src="./src/assets/images/mobile2.svg" alt="Cross-Platform App Development" className="h-[70%] w-[70%]" />
+      <img src="./src/assets/images/mobile2.svg" className="h-[70%] w-[70%]" alt="cross platform app" />
     </div>
     <h3 className="text-sm font-thin">
-      Cross-Platform App Development (React Native, Flutter)
+    Cross-Platform App Development <br/>(React Native, Flutter)
     </h3>
   </div>
 
@@ -270,12 +270,12 @@ return (
   <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
 
   {/* Card 3 */}
-  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
     <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
-      <img src="./src/assets/images/mobile3.svg" alt="App Prototyping and UI/UX Design" className="h-[70%] w-[70%]" />
+      <img src="./src/assets/images/mobile3.svg" className="h-[70%] w-[70%]" alt="app prototyping" />
     </div>
     <h3 className="text-sm font-thin">
-      App Prototyping and UI/UX Design Integration
+    App Prototyping and UI/UX Design Integration
     </h3>
   </div>
 
@@ -283,15 +283,18 @@ return (
   <div className="hidden md:block h-40 border-l-[1px] border-[#222]"></div>
 
   {/* Card 4 */}
-  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-7">
+  <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
     <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
-      <img src="./src/assets/images/mobile4.svg" alt="App Testing and Maintenance" className="h-[70%] w-[70%]" />
+      <img src="./src/assets/images/mobile4.svg" className="h-[70%] w-[70%]" alt="app testing" />
     </div>
     <h3 className="text-sm font-thin">
-      App Testing, Deployment, and Maintenance
+    App Testing, Deployment, and Maintenance
     </h3>
   </div>
 </div>
+
+
+
 
 <p className="text-center text-neutral-500 text-[24px] px-[50px] leading-10 max-w-[1300px] mx-auto mt-9">
         Our mobile app development process begins with understanding your unique requirements, target audience, and
@@ -305,17 +308,16 @@ return (
 {/*WEB DEVELOPMENT*/}
 
 
-<div className="flex flex-col sm:flex-row gap-2 ml-4 sm:ml-10 mr-auto mt-24 sm:mt-[100px] p-4 sm:p-10">
-  <h1 className="text-[24px] sm:text-[32px] font-bold text-white flex items-start justify-start">
-    <span className="text-[#fe5d26] underline ml-2">W</span>eb Development
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+  <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
+    In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application
   </h1>
   <img
-    src="./src/assets/images/img2.png"
+    src="./src/assets/images/img5.svg"
     alt="Icon"
-    className="h-[30px] w-[30px] sm:h-[37px] w-[30px] ml-0 sm:self-center"
+    className="h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] ml-2 item-end"
   />
 </div>
-
 
 <img
   src="./src/assets/images/web.svg"
@@ -327,7 +329,7 @@ return (
 <div className="flex flex-col mt-10 md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 border-y-[1px] border-y-[#222] bg-black p-6 text-white group">
   {/* Card 1 */}
   <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
-    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+    <div className="flex justify-center items-center text-orange-500  bg-transparent border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
       <img src="./src/assets/images/web1.svg" className="h-[70%] w-[70%]" alt="Frontend Development" />
     </div>
     <h3 className="text-sm font-thin">
@@ -340,7 +342,7 @@ return (
 
   {/* Card 2 */}
   <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
-    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+    <div className="flex justify-center items-center text-orange-500 bg-transparent border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
       <img src="./src/assets/images/web2.svg" className="h-[70%] w-[70%]" alt="Backend Development" />
     </div>
     <h3 className="text-sm font-thin">
@@ -353,7 +355,7 @@ return (
 
   {/* Card 3 */}
   <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
-    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+    <div className="flex justify-center items-center text-orange-500 bg-transparent border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
       <img src="./src/assets/images/web3.svg" className="h-[70%] w-[70%]" alt="CMS Development" />
     </div>
     <h3 className="text-sm font-thin">
@@ -366,7 +368,7 @@ return (
 
   {/* Card 4 */}
   <div className="flex flex-col items-center md:items-start text-center md:text-start w-full md:w-1/4 p-5">
-    <div className="flex justify-center items-center text-orange-500 bg-[#fe5d26] bg-opacity-[20%] border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
+    <div className="flex justify-center items-center text-orange-500 bg-transparent border-[#262626] border-[1px] h-[70px] w-[33%] md:w-[45%] lg:w-[50%] rounded-lg text-2xl mb-2 group-hover:h-[100px] group-hover:w-[55%] duration-300">
       <img src="./src/assets/images/web4.svg" className="h-[70%] w-[70%]" alt="E-Commerce Development" />
     </div>
     <h3 className="text-sm font-thin">

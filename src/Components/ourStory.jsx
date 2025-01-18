@@ -102,7 +102,11 @@ const ourStory = () => {
   {/*our story part 1 */}  
   <h1 className='flex underline text-[32px] mt-[150px]  text-white'><h1 className='text-[#fe5d26]'>O</h1>ur Story in Blockchain Technology</h1>
   <div class="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
-  <img src="./src/assets/images/blockChain.svg" alt="Centered Image" class="z-10 w-[1000px] h-[739.17px] top-[19101px] left-[140px]" />
+  <img 
+  src="./src/assets/images/blockChain.svg" 
+  alt="Centered Image" 
+  className="z-10 w-[90%] max-w-[1000px] h-auto mx-auto" 
+/>
 
   </div>
   <div className="flex flex-col md:flex-row justify-around items-start p-6 space-x-6 md:space-y-0">
@@ -138,10 +142,10 @@ const ourStory = () => {
   <img
       src="./src/assets/images/ourStory/os3.svg"
       alt="Bottom Right Decoration"
-      className="absolute bottom-0 right-0 w-[195px] h-[207px]"
+      className="absolute -bottom-12 right-0 w-[195px] h-[207px] "
     />
   </div>
-  </div>
+  </div> 
   <div className="flex flex-col md:flex-row justify-around items-start p-6 space-x-6 md:space-y-0">
         {blocks
         .filter((blocks) => [4,5,6].includes(blocks.id))
