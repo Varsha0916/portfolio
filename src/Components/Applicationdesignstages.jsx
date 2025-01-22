@@ -1,3 +1,4 @@
+import React from 'react';
 
 
 const DesignStages = () => {
@@ -225,7 +226,7 @@ return (
 
 <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[350px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
-    In<span className="text-[#fe5d26] underline ml-2">M</span>obile Development
+    <span className="text-[#fe5d26] underline ml-2">M</span>obile Development
   </h1>
   <img
     src="./src/assets/images/img2.png"
@@ -310,7 +311,7 @@ return (
 
 <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
-    In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application
+    <span className="text-[#fe5d26] underline ml-2">W</span>eb Application
   </h1>
   <img
     src="./src/assets/images/img5.svg"

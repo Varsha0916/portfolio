@@ -1,3 +1,5 @@
+
+import React from 'react';
 const DesignServices = () => {
 
   const boxes = [
@@ -70,7 +72,7 @@ return (
        {/* Mobile Application*/}
        <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
-    In<span className="text-[#fe5d26] underline ml-2">M</span>obile Application
+  In<span className="text-[#fe5d26] underline ml-2">M</span>obile Application
   </h1>
   <img
     src="./src/assets/images/img2.png"
@@ -84,22 +86,23 @@ return (
 <div className="w-full flex flex-col justify-between sm:flex-row lg:gap-10">
   {/* Boxes Section */}
   <div className="relative flex-col flex-wrap px-6 gap-6 my-10 flex justify-between">
-    {boxes.map((box, index) => (
-      <div
-        key={index}
-        className={`relative w-${box.width} h-auto bg-transparent border border-orange-600 rounded-lg shadow-lg flex justify-between items-center px-4 gap-2 ml-10`}
-        style={{
-          boxShadow:
-            "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
-        }}
-      >
-        <span className="text-orange-600 text-[14px] sm:text-[20px] leading-[20px] sm:leading-[41px]">
-          {box.title}
-        </span>
-        <span className="text-base sm:text-xl">{box.icon}</span>
-      </div>
-    ))}
-  </div>
+  {boxes.map((box, index) => (
+    <div
+      key={index}
+      className={`relative bg-transparent border border-orange-600 rounded-lg shadow-lg inline-flex items-center px-4 gap-2`}
+      style={{
+        boxShadow:
+          "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
+        width: 'fit-content', 
+      }}
+    >
+      <span className="text-orange-600 text-[14px] sm:text-[20px] leading-[20px] sm:leading-[41px]">
+        {box.title}
+      </span>
+      <span className="text-base sm:text-xl">{box.icon}</span>
+    </div>
+  ))}
+</div>
 
   {/* Image Section */}
   <div className="relative h-auto lg:w-[70%]  ml-auto mr-0 sm:w-[80%]  flex flex-col sm:flex-row items-center sm:items-end rounded-tl-[24px] rounded-bl-[24px] bg-[#1d1d1f] mt-[30px] sm:mt-[50px]">
@@ -169,7 +172,7 @@ return (
 
 <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
-    In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application
+   In <span className="text-[#fe5d26] underline ml-2">W</span>eb Application
   </h1>
   <img
     src="./src/assets/images/img5.svg"

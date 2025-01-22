@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ourStory = () => {
   {/* Data for our story */}
       const blocks = [
@@ -100,8 +102,8 @@ const ourStory = () => {
   return (
   <>   
   {/*our story part 1 */}  
-  <h1 className='flex underline text-[32px] mt-[150px]  text-white'><h1 className='text-[#fe5d26]'>O</h1>ur Story in Blockchain Technology</h1>
-  <div class="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
+  <h1 className='flex underline text-[32px] mt-[150px]  text-white'><span className='text-[#fe5d26]'>O</span>ur Story in Blockchain Technology</h1>
+  <div className="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
   <img 
   src="./src/assets/images/blockChain.svg" 
   alt="Centered Image" 
@@ -126,8 +128,8 @@ const ourStory = () => {
   </div>
   
   {/*our story part 2 */}
-  <div class="relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
-  <div class="absolute inset-0 bg-radial-gradient from-orange-600/80 via-transparent to-transparent"></div>
+  <div className="relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
+  <div className="absolute inset-0 bg-radial-gradient from-orange-600/80 via-transparent to-transparent"></div>
   <div className="relative w-screen h-screen">
   <img
       src="./src/assets/images/ourStory/os1.svg"

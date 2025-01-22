@@ -1,3 +1,5 @@
+import React from 'react';
+
 const blockChain = () => {
   const blockchain = [
     {
@@ -120,7 +122,7 @@ const blockChain = () => {
 
 
     return(
-    <div class=" inset-0 min-w-[1300px] mt-[100px] min-h-[1205.83px] bg-radial-gradient from-orange-600/80 via-transparent to-transparent">
+    <div className=" inset-0 min-w-[1300px] mt-[100px] min-h-[1205.83px] bg-radial-gradient from-orange-600/80 via-transparent to-transparent">
     <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-semibold min-w-[90%] max-w-screen h-auto m-auto text-center">
     <span className="text-[#fe5d26] underline mt-[100px] ml-2">B</span>lockChain Technology
   </h2>

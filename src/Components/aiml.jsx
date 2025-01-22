@@ -1,8 +1,10 @@
+import React from 'react';
+
 const AimlServices = () => {
   return (
     <>
-      <h1 className=" text-glow text-[50px] font-bold text-gray-100 mb-4 flex flex-row mt-[147px] h-[47px]"><h1 className="text-[#fe5d26] underline">AI/ML</h1> Services</h1>
-  <img src="./src/assets/images/ai.svg" alt="aiml" class="w-[1471px] h-[830.34px] t-[9492px] l-[-22px] align-middle"/>
+      <h1 className=" text-glow text-[50px] font-bold text-gray-100 mb-4 flex flex-row mt-[147px] h-[47px]"><span className="text-[#fe5d26] underline">AI/ML</span> Services</h1>
+  <img src="./src/assets/images/ai.svg" alt="aiml" className="w-[1471px] h-[830.34px] t-[9492px] l-[-22px] align-middle"/>
 
 
   <div className="relative h-auto w-[1218px] flex flex-col items-center bg-[#1E1E1E] text-white py-8 px-6">
@@ -36,37 +38,36 @@ const AimlServices = () => {
         "./src/assets/images/aiml icon4.svg",
       ];
 
-      return (
-        <div
-          key={index}
-          className="group relative w-full max-w-[274.5px] h-auto bg-[#FFFFFF0D] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 mx-auto hover:border-2 hover:border-blue-500"
-        >
-          {/* Icon container */}
-          <div
-            className="absolute top-1 left-4 transform transition-transform duration-300 group-hover:scale-50 group-hover:translate-x-[-10px] group-hover:translate-y-[-10px]"
-          >
-            <img
-              src={images[index]}
-              alt={`icon-${index + 1}`}
-              className="w-[100px] h-[100px] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] lg:w-[110px] lg:h-[110px]"
-            />
-          </div>
-          <div className="mt-20 group-hover:mt-12"> {/* Reduced margin-top during hover */}
-            <h3
-              className="text-[16px] font-semibold text-left bg-gradient-to-l from-[#6C63FF66] to-[#6C63FF] text-transparent bg-clip-text transition-all duration-300 group-hover:text-[23px] sm:text-[18px] md:text-[20px] lg:text-[20px]"
-              style={{
-                textShadow: "0 0 4px rgba(108, 99, 255, 0.5), 0 0 6px rgba(108, 99, 255, 0.3)"
-              }}
-            >
-              {headings[index]}
-            </h3>
-            <div className="h-[1px] w-20 bg-white mt-6 mb-4"></div>
-            <p className="text-gray-300 text-left text-[14.75px] sm:text-[15px] md:text-[16px] lg:text-[14.75px]">
-              {descriptions[index]}
-            </p>
-          </div>
-        </div>
-      );
+      return(<div
+  key={index}
+  className="group relative w-full max-w-[274.5px] h-auto bg-[#FFFFFF0D] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 mx-auto hover:border-2 hover:border-blue-500"
+>
+  {/* Icon container */}
+  <div
+    className="absolute top-1 left-4 transform transition-transform duration-300 group-hover:scale-50 group-hover:translate-x-[-10px] group-hover:translate-y-[-10px]"
+  >
+    <img
+      src={images[index]}
+      alt={`icon-${index + 1}`}
+      className="w-[90px] h-[90px] sm:w-[100px] sm:h-[100px] md:w-[110px] md:h-[110px] lg:w-[120px] lg:h-[120px]"
+    />
+  </div>
+  <div className="mt-20 group-hover:mt-12"> {/* Reduced margin-top during hover */}
+    <h3
+      className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-semibold text-left bg-gradient-to-l from-[#6C63FF66] to-[#6C63FF] text-transparent bg-clip-text transition-all duration-300 group-hover:text-[23px] sm:text-[18px] md:text-[20px] lg:text-[22px]"
+      style={{
+        textShadow: "0 0 4px rgba(108, 99, 255, 0.5), 0 0 6px rgba(108, 99, 255, 0.3)",
+      }}
+    >
+      {headings[index]}
+    </h3>
+    <div className="h-[1px] w-20 bg-white mt-6 mb-4"></div>
+    <p className="text-gray-300 text-left text-[12px] sm:text-[14px] md:text-[16px] lg:text-[14.75px]">
+      {descriptions[index]}
+    </p>
+  </div>
+</div>
+)
     })}
   </div>
 </div>
@@ -89,11 +90,19 @@ const AimlServices = () => {
     <img src="./src/assets/images/AI (4).svg" alt="ai" className="w-full sm:w-[500px] h-[332.58px] mx-auto" />
   </div>
 </div>
-  <div classname="w-[1204px] h-[215px] t-[11774px] l-[38px] ">
-<p className=" text-neutral-400 font-segoe text-[24px] font-normal leading-[43px] text-center p-40">We harness the transformative power of Artificial Intelligence (AI) and Machine<span className='text-white'> Learning (ML)</span> to help businesses <br/>stay ahead in an ever-evolving digital landscape. Our AI/ML solutions are designed to <span className='text-white'>automate processes</span>,<br/> enhance decision-making, and unlock hidden opportunities within your data. From predictive analytics to natural<br/> language processing and computer vision, we tailor our services to solve real-world challenges and <span className='text-white'> drive <br/>measurable results</span>.</p>
+<div className="w-full max-w-[1204px] h-auto t-[11774px] l-[38px] px-4 sm:px-8">
+  <p className="text-neutral-400 font-segoe text-[24px] font-normal leading-[43px] text-center mt-5 sm:text-[24px] sm:leading-[43px]">
+    We harness the transformative power of Artificial Intelligence (AI) and Machine
+    <span className="text-white"> Learning (ML)</span> to help businesses
+    stay ahead in an ever-evolving digital landscape. Our AI/ML solutions are designed to
+    <span className="text-white"> automate processes</span>,
+    enhance decision-making, and unlock hidden opportunities within your data. From predictive analytics to natural
+    language processing and computer vision, we tailor our services to solve real-world challenges and
+    <span className="text-white"> drive measurable results</span>.
+  </p>
 </div>
 
-<img src="./src/assets/images/AI ML.svg" alt="aiml" className='w-[700px] h-[698.6px] t-[12229px] l-[290px]'/>
+<img src="./src/assets/images/AI ML.svg" alt="aiml" className='w-[700px] h-[698.6px] t-[12229px] l-[290px] mt-36'/>
 <div className="w-full flex items-start justify-start">
   <img
     src="./src/assets/images/aiml2.svg"
@@ -225,48 +234,48 @@ const AimlServices = () => {
 
 <img src="./src/assets/images/aitoy.svg" alt="aiml" className='w-[1015px] h-[659px] t-[13991px] l-[132px]'/>
 
-<div class="ml-10 mr-[auto] text-left p-6 sm:p-8 md:p-10">
-  <h1 class="w-full text-[#4280EF] text-[16.62px] sm:text-[18px] md:text-[20px] font-semibold">
+<div className="ml-10 mr-[auto] text-left p-6 sm:p-8 md:p-10">
+  <h1 className="w-full text-[#4280EF] text-[16.62px] sm:text-[18px] md:text-[20px] font-semibold">
     How it works
   </h1>
-  <h1 class="w-full text-white font-semibold text-[33.97px] sm:text-[28px] md:text-[33px] leading-[-0.45px] mt-3">
+  <h1 className="w-full text-white font-semibold text-[33.97px] sm:text-[28px] md:text-[33px] leading-[-0.45px] mt-3">
     We Can Expect To Get From The <br />AI ML
   </h1>
 
-  <div class="w-full sm:w-auto md:w-[1225px] h-auto gap-[16.09px] mx-auto bg-black text-white p-6 mt-5">
-    <div class="flex flex-col items-center">
+  <div className="w-full sm:w-auto md:w-[1225px] h-auto gap-[16.09px] mx-auto bg-black text-white p-6 mt-5">
+    <div className="flex flex-col items-center">
 
-      <div class="flex flex-wrap justify-between w-full mb-4 gap-[40px] sm:gap-8">
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Access To Cutting-<br />Edge <span class="text-orange-500"><br />Technology</span>
+      <div className="flex flex-wrap justify-between w-full mb-4 gap-[40px] sm:gap-8">
+        <h3 className="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
+          Access To Cutting-<br />Edge <span className="text-orange-500"><br />Technology</span>
         </h3>
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Data-Driven <span class="text-orange-500"><br />Decision Making</span>
+        <h3 className="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
+          Data-Driven <span className="text-orange-500"><br />Decision Making</span>
         </h3>
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Focus on Core <span class="text-orange-500"><br />Competencies</span>
+        <h3 className="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
+          Focus on Core <span className="text-orange-500"><br />Competencies</span>
         </h3>
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Expert Digital <span class="text-orange-500"><br />Solutions</span>
+        <h3 className="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
+          Expert Digital <span className="text-orange-500"><br />Solutions</span>
         </h3>
       </div>
 
-      <hr class="w-full md:w-[1225px] h-[2px] border-t border-[#86868B] mb-4 mt-4" />
+      <hr className="w-full md:w-[1225px] h-[2px] border-t border-[#86868B] mb-4 mt-4" />
 
-      <div class="flex flex-wrap justify-between w-full gap-[109px] sm:gap-4">
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+      <div className="flex flex-wrap justify-between w-full gap-[109px] sm:gap-4">
+        <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
           We provide access to the<br />latest technologies, ensuring<br />your business stays ahead of<br />
           the competition with<br />innovative solutions that drive<br />growth and efficiency.
         </p>
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+        <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
           Leverage data insights to<br />make informed, strategic<br />decisions that enhance your<br />
           operations, improve<br />performance, and maximize<br />ROI.
         </p>
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+        <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
           We enable your team to<br />concentrate on your core<br />strengths while we handle the<br />
           digital solutions that propel<br />your business forward.
         </p>
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+        <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
           Our team of skilled<br />professionals, with expertise<br />across various digital<br />disciplines,
           will help you<br />navigate the digital landscape<br />and achieve your business<br />objectives with
           tailored<br />solutions.

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const EmbeddedSystems = () => {
   return (
     <>
@@ -8,81 +10,81 @@ const EmbeddedSystems = () => {
         alt="Embedded Service" 
       />
 
-<div class="bg-black text-white py-10 px-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto">
+<div className="bg-black text-white py-10 px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto">
 
     
-    <div class="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
+    <div className="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
       <div>
-        <div class="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
-          <img src="./src/assets/images/emb1.svg" alt="Custom Development" class="w-[40px] h-[40px]" />
+        <div className="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
+          <img src="./src/assets/images/emb1.svg" alt="Custom Development" className="w-[40px] h-[40px]" />
         </div>
-        <h3 class="text-2xl text-left mb-2">Custom Embedded Development</h3>
-        <p class="text-sm text-left text-gray-400">
+        <h3 className="text-2xl text-left mb-2">Custom Embedded Development</h3>
+        <p className="text-sm text-left text-gray-400">
           From concept to deployment, we design and develop bespoke embedded systems tailored to your specific requirements.
         </p>
       </div>
-      <div class="mt-4 flex justify-end">
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="./src/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
+      <div className="mt-4 flex justify-end">
+        <div className="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
+          <img src="./src/assets/images/add.svg" alt="Add Icon" className="w-[15px] h-[15px] group-hover:hidden" />
+          <h1 className="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
         </div>
       </div>
     </div>
 
     
-    <div class="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
+    <div className="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
       <div>
-        <div class="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
-          <img src="./src/assets/images/emb2.svg" alt="Firmware Design" class="w-[40px] h-[40px]" />
+        <div className="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
+          <img src="./src/assets/images/emb2.svg" alt="Firmware Design" className="w-[40px] h-[40px]" />
         </div>
-        <h3 class="text-2xl text-left mb-2">Firmware Design and Development</h3>
-        <p class="text-sm text-left text-gray-400">
+        <h3 className="text-2xl text-left mb-2">Firmware Design and Development</h3>
+        <p className="text-sm text-left text-gray-400">
           High-quality firmware solutions optimized for performance and reliability, ensuring seamless hardware-software integration.
         </p>
       </div>
-      <div class="mt-4 flex justify-end">
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="./src/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
+      <div className="mt-4 flex justify-end">
+        <div className="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
+          <img src="./src/assets/images/add.svg" alt="Add Icon" className="w-[15px] h-[15px] group-hover:hidden" />
+          <h1 className="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
         </div>
       </div>
     </div>
 
    
-    <div class="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
+    <div className="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
       <div>
-        <div class="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
-          <img src="./src/assets/images/emb3.svg" alt="IoT Solutions" class="w-[40px] h-[40px]" />
+        <div className="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
+          <img src="./src/assets/images/emb3.svg" alt="IoT Solutions" className="w-[40px] h-[40px]" />
         </div>
-        <h3 class="text-2xl text-left mb-2">IoT Solutions</h3>
-        <p class="text-sm text-left text-gray-400">
+        <h3 className="text-2xl text-left mb-2">IoT Solutions</h3>
+        <p className="text-sm text-left text-gray-400">
           Empower your devices with intelligent connectivity, enabling real-time data collection, processing, and communication.
         </p>
       </div>
-      <div class="mt-4 flex justify-end">
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="./src/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
+      <div className="mt-4 flex justify-end">
+        <div className="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
+          <img src="./src/assets/images/add.svg" alt="Add Icon" className="w-[15px] h-[15px] group-hover:hidden" />
+          <h1 className="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
         </div>
       </div>
     </div>
 
     
-    <div class="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
+    <div className="group border border-gray-700 hover:border-[#fe5d26] hover:scale-105 transition-transform duration-300 rounded-lg p-6 flex flex-col justify-between h-full">
       <div>
-        <div class="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
-          <img src="./src/assets/images/emb4.svg" alt="Testing and Optimization" class="w-[40px] h-[40px]" />
+        <div className="flex items-center justify-center w-12 h-12 bg-black rounded-md mb-4">
+          <img src="./src/assets/images/emb4.svg" alt="Testing and Optimization" className="w-[40px] h-[40px]" />
         </div>
-        <h3 class="text-2xl text-left mb-2">Testing and Optimization</h3>
-        <p class="text-sm text-left text-gray-400">
+        <h3 className="text-2xl text-left mb-2">Testing and Optimization</h3>
+        <p className="text-sm text-left text-gray-400">
           Rigorous testing and fine-tuning to ensure efficient, performance-ready reliability in real-world scenarios.
         </p>
       </div>
-      <div class="mt-4 flex justify-end">
-        <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="./src/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
+      <div className="mt-4 flex justify-end">
+        <div className="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
+          <img src="./src/assets/images/add.svg" alt="Add Icon" className="w-[15px] h-[15px] group-hover:hidden" />
+          <h1 className="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css'
 import DesignServices from './Components/designServices';
 import AimlServices from './Components/aiml';
@@ -26,7 +26,7 @@ function App() {
   src='./src/assets/images/img1.png'
   alt="Product Image"
 />
-<p className="text-center text-white text-2xl sm:text-lg md:text-4xl p-6 sm:p-10 overflow-x-hidden relative leading-[40px] sm:leading-[70px]">
+<p className="text-center text-white text-xl sm:text-lg md:text-4xl p-6 sm:p-10 overflow-x-hidden relative leading-[40px] sm:leading-[70px]">
   We specialize in developing products that not only meet user needs but exceed their expectations.
   With a perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, 
   we craft solutions that people genuinely love to use. Our goal is to create experiences that are intuitive, 
@@ -39,7 +39,6 @@ function App() {
 {/*DESIGN SERVICES*/}
     {/*Mobile Application*/}
     {/*Web Application*/}
-    {/*Development Services*/}
               
 <DesignServices/>
 
@@ -48,6 +47,7 @@ function App() {
 
 
 {/* APPLICATION DESIGN STAGES */}
+    {/*Development Services*/}
     {/*TRANSFORMATION*/}
     {/*MOBILE DEVELOPMENT*/}
     {/*WEB DEVELOPMENT*/}
