@@ -6,3 +6,8 @@ test('checking component loading', () => {
   render(<App />);
   expect(screen.queryByText(/What We Do\?/i)).toBeInTheDocument();
 });
+
+test('checking next component loading', () => {
+  render(<App />);
+  expect(screen.queryByText(/We Develop Products That People Love to Use./i)).toBeInTheDocument();
+});
