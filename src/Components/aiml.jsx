@@ -77,7 +77,7 @@ const AimlServices = () => {
   Transformative Power: Harness AI and ML to stay ahead in an ever-evolving digital landscape
 </h1>
 
-<div className="flex flex-col gap-y-[40px]">
+<div className="flex flex-col gap-y-[40px]" data-testid="services-grid">
   {/* First Grid */}
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px] px-5 md:px-10">
     <img src="./src/assets/images/AI (1).svg" alt="ai" className="w-full sm:w-[500px] h-[332.58px] mx-auto" />
