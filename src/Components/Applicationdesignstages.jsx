@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 
 const DesignStages = () => {
 
@@ -42,15 +41,28 @@ const DesignStages = () => {
     },
   ];
 
+  const HorizontalLine = () => {
+    return (
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-screen-2xl mx-auto px-10">
+          <hr className="border-[1px] border-gray-300" />
+        </div>
+      </div>
+    );
+  };
+
 return (
     <>
       {/* APPLICATION DESIGN STAGES */}
+
+      <HorizontalLine />
+
       <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-semibold relative text-glow2 w-full sm:w-[600px] md:w-[724px] lg:w-[800px] h-auto sm:h-[80px] md:h-[74px] lg:h-[90px] p-6 sm:p-8 md:p-[50px]">
   Application Design Stages
 </h1>
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 p-6 sm:p-12 lg:p-20">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 p-6 sm:p-12 lg:p-20 group">
   {[
     { src: "./src/assets/images/1.svg", alt: "Analysis", title: "Analysis" },
     { src: "./src/assets/images/2.svg", alt: "Design", title: "Design" },
@@ -61,19 +73,34 @@ return (
   ].map((item, index) => (
     <div
       key={index}
-      className="bg-black border-neutral-400 text-center w-full sm:w-[220px] h-auto border-[0.5px] p-4 sm:p-[12px] gap-4"
+      className={`bg-black border-neutral-400 text-center w-full sm:w-[220px] h-auto border-[0.5px] p-4 sm:p-[12px] gap-4 transform transition-transform duration-500 ${
+        index === 0 || index === 2
+          ? "group-hover:translate-y-[-30px]" 
+          : index === 1
+          ? "group-hover:translate-y-[-60px]" 
+          : index === 3 || index === 5
+          ? "group-hover:translate-y-[30px]" 
+          : index === 4
+          ? "group-hover:translate-y-[60px]" 
+          : ""
+      } group-hover:scale-135 group-hover:scale-135`} 
     >
       <img
         src={item.src}
         alt={item.alt}
-        className="w-[150px] sm:w-[200px] h-auto mx-auto"
+        className="w-[150px] sm:w-[200px] h-auto mx-auto transition-transform duration-500 group-hover:scale-140"
       />
-      <p className="font-bold text-lg sm:text-xl mt-4 text-white">{item.title}</p>
+      <p className="font-bold text-lg sm:text-xl mt-4 text-white transition-transform duration-500 group-hover:scale-140">
+        {item.title}
+      </p>
     </div>
   ))}
 </div>
 
 {/*Development Services*/}
+
+<HorizontalLine />
+
 
 <div className="bg-black text-white py-10">
   <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-semibold w-[90%] max-w-[724px] h-auto m-auto text-center">
@@ -173,13 +200,31 @@ return (
   </div>
 </div>
 
+
+
+
+
+
 {/* TRANSFORMATION */}
-<section className="bg-black text-white flex flex-col items-center p-10 relative h-auto sm:h-screen">
-  {/* Background Glow */}
-  <div className="absolute  bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
-  <div className="relative z-10 w-full">
+
+<HorizontalLine/>
+
+<section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto  md:h-auto lg:h-[1100px]">
+  {/* Semicircle Gradient Background */}
+  <div
+    className="absolute right-0 top-0 h-full w-[500px]"
+    style={{
+      background: "radial-gradient(circle at left, rgba(254, 93, 38, 0.8), transparent 70%)",
+      borderTopLeftRadius: "250px",
+      borderBottomLeftRadius: "250px",
+      zIndex: "-10",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="relative z-10 w-full flex flex-col md:flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-12 pb-40 md:pb-60">
     {/* Step 1 */}
-    <div className="flex flex-col items-center sm:items-start md:absolute md:-top-9 md:right-44 lg:right-64 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px] mb-6 md:mb-0">
+    <div className="flex flex-col items-center sm:items-start lg:absolute lg:-top-9 lg:right-64 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">01.</div>
       <img
         src="./src/assets/images/01page.svg"
@@ -191,8 +236,8 @@ return (
       </p>
     </div>
 
-    {/* Step 2 */}
-    <div className="flex flex-col items-center sm:items-start md:absolute md:top-[250px] md:-left-40 lg:-left-52 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px] mb-6 md:mb-0">
+  {/* Step 2 */}
+  <div className="flex flex-col items-center sm:items-start lg:absolute lg:top-[280px] lg:-left-52 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">02.</div>
       <img
         src="./src/assets/images/02page.svg"
@@ -205,7 +250,7 @@ return (
     </div>
 
     {/* Step 3 */}
-    <div className="flex flex-col items-center sm:items-start md:absolute md:top-[480px] md:left-36 lg:left-52 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
+    <div className="flex flex-col items-center sm:items-start lg:absolute lg:top-[560px] lg:left-52 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">03.</div>
       <img
         src="./src/assets/images/03page.svg"
@@ -216,15 +261,15 @@ return (
         Rigorous testing ensures a flawless product, followed by seamless deployment to make your solution ready for the world.
       </p>
     </div>
+  
   </div>
 </section>
 
 
-
 {/*MOBILE DEVELOPMENT*/}
 
-
-<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[350px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+<HorizontalLine/>
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[30px] md:mt-[15px] lg:mt-[50px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
     <span className="text-[#fe5d26] underline ml-2">M</span>obile Development
   </h1>
@@ -297,21 +342,22 @@ return (
 
 
 
-<p className="text-center text-neutral-500 text-[24px] px-[50px] leading-10 max-w-[1300px] mx-auto mt-9">
-        Our mobile app development process begins with understanding your unique requirements, target audience, and
-        business objectives to establish a strong foundation. We then craft intuitive user interfaces and develop feature-
-        rich, scalable mobile applications tailored to your vision. Through rigorous quality assurance, we ensure seamless
-        functionality, exceptional performance, and a flawless user experience. Finally, we deploy your app to app stores
-        and provide continuous updates and support to keep it optimized and competitive in the ever-evolving digital landscape.
-      </p>
-
+<p className="text-center text-neutral-500 text-[18px] sm:text-[20px] md:text-[24px] px-6 sm:px-8 md:px-[50px] leading-8 sm:leading-9 md:leading-10 max-w-[90%] sm:max-w-[1100px] md:max-w-[1300px] mx-auto mt-6 sm:mt-8 md:mt-9 p-6 sm:p-8 md:p-10">
+  Our mobile app development process begins with understanding your unique requirements, target audience, and
+  business objectives to establish a strong foundation. We then craft intuitive user interfaces and develop feature-
+  rich, scalable mobile applications tailored to your vision. Through rigorous quality assurance, we ensure seamless
+  functionality, exceptional performance, and a flawless user experience. Finally, we deploy your app to app stores
+  and provide continuous updates and support to keep it optimized and competitive in the ever-evolving digital landscape.
+</p>
 
 {/*WEB DEVELOPMENT*/}
 
+<HorizontalLine />
 
-<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[40px] md:mt-[50px] lg:mt-[40px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
-    <span className="text-[#fe5d26] underline ml-2">W</span>eb Application
+  <span className="text-[#fe5d26] underline ml-2">W</span>eb Development
   </h1>
   <img
     src="./src/assets/images/img5.svg"
@@ -323,8 +369,9 @@ return (
 <img
   src="./src/assets/images/web.svg"
   alt="Icon"
-  className="h-auto max-h-[845px] w-full sm:w-[80%] md:w-[70%] lg:w-[60%] top-[6574px] left-[140px] ml-0 item-end"
+  className="h-auto w-full max-h-[845px] sm:w-[80%] md:w-[70%] lg:w-[1180px] lg:h-[669.89px] lg:top-[8078px] lg:left-[50px] lg:gap-0 lg:rounded-tl-[19.25px] lg:rounded-tr-none "
 />
+
 
 
 <div className="flex flex-col mt-10 md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 border-y-[1px] border-y-[#222] bg-black p-6 text-white group">
@@ -381,13 +428,13 @@ return (
 
 
 
-      <p className="text-center text-neutral-500 text-[24px] px-[50px] leading-[40px] max-w-[1300px] mx-auto mt-9">
-        Our web development process starts with a deep understanding of your goals, audience, and business needs to
-        create a solid blueprint for success. We design and build responsive, visually appealing, and highly functional
-        websites tailored to your vision. Rigorous testing ensures seamless performance, cross-browser compatibility, and
-        a flawless user experience. Once launched, we offer continuous updates and support to keep your website secure,
-        optimized, and aligned with the latest industry trends.
-      </p>
+<p className="text-center text-neutral-500 text-[18px] sm:text-[20px] md:text-[24px] px-6 sm:px-8 md:px-[50px] p-6 sm:p-8 md:p-10 leading-[30px] sm:leading-[35px] md:leading-[40px] max-w-[90%] sm:max-w-[1100px] md:max-w-[1300px] mx-auto mt-6 sm:mt-8 md:mt-9">
+  Our web development process starts with a deep understanding of your goals, audience, and business needs to
+  create a solid blueprint for success. We design and build responsive, visually appealing, and highly functional
+  websites tailored to your vision. Rigorous testing ensures seamless performance, cross-browser compatibility, and
+  a flawless user experience. Once launched, we offer continuous updates and support to keep your website secure,
+  optimized, and aligned with the latest industry trends.
+</p>
 
     </>
   );

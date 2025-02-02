@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css'
+import "./App.css";
+
 import DesignServices from './Components/designServices';
 import AimlServices from './Components/aiml';
 import EmbeddedSystems from './Components/embedded';
@@ -7,72 +8,62 @@ import BlockChain from './Components/blockChain'
 import OurStory from './Components/ourStory';
 import DesignStages from './Components/Applicationdesignstages';
 
-
-
-function App() {
-  
-
+export default function App() {
+  const HorizontalLine = () => {
+    return (
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-screen-2xl mx-auto px-10">
+          <hr className="border-[1px] border-gray-300" />
+        </div>
+      </div>
+    );
+  };
 
   return (
-    <section className="bg-black h-scroll w-screen flex items-center justify-center text-center flex-col overflow-hidden pb-20 sm:w-screen sm:scroll-x-hidden" data-testid="main-section">
-      <h1 className="text-glow text-4xl sm:text-5xl md:text-6xl font-bold text-[#fe5d26] m-6 sm:m-10">
-  What We Do?
-</h1>
-<p className="text-2xl sm:text-2xl md:text-4xl text-center mb-6 sm:mb-8 text-gray-100">
-  We Develop Products That People Love to Use.
-</p>
-<img 
-  className="h-auto w-[80%] sm:w-[60%] md:w-[40%] mx-auto"
-  src='./src/assets/images/img1.png'
-  alt="Product Image"
-/>
-<p className="text-center text-white text-xl sm:text-lg md:text-4xl p-6 sm:p-10 overflow-x-hidden relative leading-[40px] sm:leading-[70px]" id='paragraph' data-testid="paragraph" >
-  We specialize in developing products that not only meet user needs but exceed their expectations.
-  With a perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, 
-  we craft solutions that people genuinely love to use. Our goal is to create experiences that are intuitive, 
-  engaging, and leave a lasting impression, ensuring that every product we deliver becomes an integral part of 
-  our users’ lives.
-</p>
+    <>
+      <section 
+       aria-label="main-section"
+       className="bg-black overflow-x-hidden flex items-center justify-center text-center flex-col pb-20"
+       role="region"
+       >
+        <h1 className="text-glow text-4xl sm:text-5xl md:text-6xl font-bold text-[#fe5d26] m-6 sm:m-10">
+          What We Do?
+        </h1>
 
+        <p className="text-2xl sm:text-2xl md:text-4xl text-center mb-6 sm:mb-8 text-gray-100">
+          We Develop Products That People Love to Use.
+        </p>
 
+        <div className="w-full flex flex-col sm:flex-row items-center">
+          {/* First Image */}
+          <img
+            src="./src/assets/images/service1.svg"
+            alt="aiml2"
+            className="w-full max-w-[500px] h-auto mb-4 sm:mb-0 sm:ml-0"
+          />
 
-{/*DESIGN SERVICES*/}
-    {/*Mobile Application*/}
-    {/*Web Application*/}
-              
-<DesignServices/>
+          {/* Second Image */}
+          <img
+            src="./src/assets/images/service2.svg"
+            alt="Product Image"
+            className="h-auto w-full max-w-[650px] sm:w-auto sm:-ml-10 mb-2"
+          />
+        </div>
 
+        <p className="text-center text-white font-light text-base sm:text-lg md:text-2xl lg:text-[28px] sm:p-10 relative leading-[30px] sm:leading-[45px] pb-8 w-full max-w-[1178px] mx-auto">
+          We specialize in developing products that not only meet user needs but exceed their expectations. With a perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, we craft solutions that people genuinely love to use. Our goal is to create experiences that are intuitive, engaging, and leave a lasting impression, ensuring that every product we deliver becomes an integral part of our users’ lives.
+        </p>
 
+        <HorizontalLine />
 
-
-
-{/* APPLICATION DESIGN STAGES */}
-    {/*Development Services*/}
-    {/*TRANSFORMATION*/}
-    {/*MOBILE DEVELOPMENT*/}
-    {/*WEB DEVELOPMENT*/}
-
-<DesignStages/>
-
-{/*AI ML SERVICES*/}
-  
-<AimlServices/>
-
-{/*EMBEDDED SYSTEMS*/}
-
-<EmbeddedSystems/>
-
-{/*BLOCKCHAIN*/}
-
-<BlockChain/>
-
-{/*OUR STORY*/}
-<OurStory/>
-
-
-
+        {/* Additional Components */}
+        <DesignServices />
+        <DesignStages />
+        <AimlServices />
+        <EmbeddedSystems />
+        <BlockChain />
+        <OurStory />
       </section>
-  )
+    </>
+  );
 }
-
-export default App

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ourStory = () => {
   {/* Data for our story */}
@@ -97,77 +97,110 @@ const ourStory = () => {
             );
           });
         };
+
+        const HorizontalLine = () => {
+          return (
+            <div className="w-full flex justify-center">
+              {/* Adjust the width and padding */}
+              <div className="w-full max-w-screen-2xl mx-auto px-10">
+                <hr className="border-[1px] border-gray-300" />
+              </div>
+            </div>
+          );
+        };
       
   
   return (
   <>   
   {/*our story part 1 */}  
-  <h1 className='flex underline text-[32px] mt-[150px]  text-white'><span className='text-[#fe5d26]'>O</span>ur Story in Blockchain Technology</h1>
-  <div className="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
+  <HorizontalLine/>
+  <h1 className="flex flex-wrap justify-center sm:justify-start text-center sm:text-left underline text-[24px] sm:text-[28px] md:text-[32px] mt-[50px] sm:mt-[100px] md:mt-[50px] text-white">
+  <span className="text-[#fe5d26]">O</span>ur Story in Blockchain Technology
+</h1>
+  <div class="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
   <img 
   src="./src/assets/images/blockChain.svg" 
   alt="Centered Image" 
   className="z-10 w-[90%] max-w-[1000px] h-auto mx-auto" 
 />
+</div>
 
-  </div>
-  <div className="flex flex-col md:flex-row justify-around items-start p-6 space-x-6 md:space-y-0">
-        {blocks
-        .filter((blocks) => [1, 2, 3].includes(blocks.id))
-        .map((block, index) => (
-          <div
-            key={index}
-            className="block max-w-sm text-center md:text-left "
-          ><div className='flex w-[374px] h-[162px] gap-[10.53px]  items-center justify-center'>
-            <h1 className="text-[112.58px] max-h font-bold text-orange-500 pb-[19.76px]">{block.number}</h1>
-            <h2 className="text-[28.59px] leading-[42.88px] font-semibold pb-[19.76px] pl-[7.52px] border-b-[1px] border-b-[#262626] text-[#fe5d26]">{block.title}</h2>
-          </div>
-            <p className="text-[#98989A] leading-[27px] text-[18px]">{block.description}</p>
-          </div>
-        ))}
-  </div>
+
+<div className="flex flex-col md:flex-row justify-around items-start p-6 md:space-x-6 space-y-6 md:space-y-0">
+  {blocks
+    .filter((blocks) => [1, 2, 3].includes(blocks.id))
+    .map((block, index) => (
+      <div
+        key={index}
+        className="block max-w-full md:max-w-sm text-center md:text-left"
+      >
+        <div className="flex w-full max-w-[374px] h-auto gap-4 items-center justify-center md:justify-start">
+          <h1 className="text-[64px] sm:text-[80px] md:text-[50px] lg:text-[112.58px] font-bold text-orange-500 pb-4">
+            {block.number}
+          </h1>
+          <h2 className="text-[18px] sm:text-[24px] md:text-[20px] leading-[1.5] font-semibold text-[#fe5d26] pl-2 border-b border-[#262626]">
+            {block.title}
+          </h2>
+        </div>
+        <p className="text-[#98989A] text-[14px] sm:text-[16px] md:text-[15px] leading-[24px] sm:leading-[27px] mt-4">
+          {block.description}
+        </p>
+      </div>
+    ))}
+</div>
   
   {/*our story part 2 */}
-  <div className="relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
-  <div className="absolute inset-0 bg-radial-gradient from-orange-600/80 via-transparent to-transparent"></div>
-  <div className="relative w-screen h-screen">
-  <img
+  <div class="relative flex items-center justify-center h-[739.16px] w-full bg-black">
+  <div class="absolute inset-0 bg-radial-gradient from-orange-600/80 via-transparent to-transparent"></div>
+  <div class="relative w-full h-full">
+    
+    <img
       src="./src/assets/images/ourStory/os1.svg"
       alt="Top Left Decoration"
-      className="absolute top-0 left-0 w-[141px] h-[123px]"
+      class="absolute top-4 left-0 w-[80px] sm:w-[100px] md:w-[120px] lg:w-[141px] h-auto"
     />
-  <img
+   
+    <img
       src="./src/assets/images/ourStory/os2.svg"
       alt="Blockchain Centered"
-      className="z-10 w-[486.12px] h-[644.14px] mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      class="z-10 w-[250px] sm:w-[350px] md:w-[400px] lg:w-[486.12px] h-auto mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
     />
-  <img
+
+    <img
       src="./src/assets/images/ourStory/os3.svg"
       alt="Bottom Right Decoration"
-      className="absolute -bottom-12 right-0 w-[195px] h-[207px] "
+      class="absolute bottom-4 right-0 w-[100px] sm:w-[150px] md:w-[175px] lg:w-[195px] h-auto"
     />
   </div>
-  </div> 
-  <div className="flex flex-col md:flex-row justify-around items-start p-6 space-x-6 md:space-y-0">
-        {blocks
-        .filter((blocks) => [4,5,6].includes(blocks.id))
-        .map((block, index) => (
-          <div
-            key={index}
-            className="block max-w-sm text-center md:text-left "
-          ><div className='flex w-[374px] h-[162px] gap-[10.53px]  items-center justify-center'>
-            <h1 className="text-[112.58px] max-h font-bold text-orange-500 pb-[19.76px]">{block.number}</h1>
-            <h2 className="text-[28.59px] leading-[42.88px] font-semibold pb-[19.76px] pl-[7.52px] border-b-[1px] border-b-[#262626] text-[#fe5d26]">{block.title}</h2>
-          </div>
-            <p className="text-[#98989A] leading-[27px] text-[18px]">{block.description}</p>
-          </div>
-        ))}
-  </div>
+</div>
+<div className="flex flex-col md:flex-row justify-around items-start p-6 md:space-x-6 space-y-6 md:space-y-0">
+  {blocks
+    .filter((blocks) => [4,5,6].includes(blocks.id))
+    .map((block, index) => (
+      <div
+        key={index}
+        className="block max-w-full md:max-w-sm text-center md:text-left"
+      >
+        <div className="flex w-full max-w-[374px] h-auto gap-4 items-center justify-center md:justify-start">
+          <h1 className="text-[64px] sm:text-[80px] md:text-[50px] lg:text-[112.58px] font-bold text-orange-500 pb-4">
+            {block.number}
+          </h1>
+          <h2 className="text-[18px] sm:text-[24px] md:text-[20px] leading-[1.5] font-semibold text-[#fe5d26] pl-2 border-b border-[#262626]">
+            {block.title}
+          </h2>
+        </div>
+        <p className="text-[#98989A] text-[14px] sm:text-[16px] md:text-[15px] leading-[24px] sm:leading-[27px] mt-4">
+          {block.description}
+        </p>
+      </div>
+    ))}
+</div>
+  
   
   {/*our story part 3 */}
   <div className="relative w-full h-[150vw] max-w-[400px] max-h-[300px] min-h-[150px] mx-auto my-[250px] flex items-center justify-center bg-black">
   <div className="absolute w-[600px] h-[600px] bg-[#616161] opacity-[7%] rounded-full "></div>
-  <div className="absolute w-[400px] h-[400px] bg-gradient-to-br from-[#fe5d26] to-blue-900 rounded-full blur-2xl opacity-75 "></div>
+  <div className="absolute w-[400px] h-[400px] bg-gradient-to-br from-[#fe5d26] to-blue-900 rounded-full blur-xl opacity-75 "></div>
   {generateDots()}
   <img
       src="./src/assets/images/ourStory/os4.svg"
@@ -195,10 +228,15 @@ const ourStory = () => {
   
   {/*footer paragraph */}
   
-  <p className="width-[204px] height-[82px] top-[21813px] left-[38px] text-[#86868B] leading-[47px] text-[24px]">
-  Blockchain technology is a transformative force that enables secure, transparent, and tamper-proof digital<br/> interactions. By leveraging decentralized networks, it eliminates intermediaries, reduces costs, and enhances trust<br/> across industries such as finance, supply chain, healthcare, and real estate. Blockchain's core features, including<br/> immutability, smart contracts, and consensus <span className="text-orange-600">mechanisms</span>, empower businesses to streamline operations,<br/><span className="text-orange-600"> enhance data security</span>, and unlock <span className="text-orange-600">new opportunities.</span></p>
-  </>
-      
+  <p className="text-center sm:text-centre text-gray-500 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] px-4 sm:px-6 md:px-8 lg:px-12 leading-[24px] sm:leading-[30px] md:leading-[35px] lg:leading-[47px] max-w-full md:max-w-[800px] lg:max-w-[1300px] mx-auto mt-6 sm:mt-8 md:mt-10 pb-8">
+  Blockchain technology is a transformative force that enables secure, transparent, and tamper-proof digital 
+  interactions. By leveraging decentralized networks, it eliminates intermediaries, reduces costs, and enhances trust
+  across industries such as finance, supply chain, healthcare, and real estate. Blockchain's core features, including
+  immutability, smart contracts, and consensus <span className="text-orange-600">mechanisms</span>, empower businesses to streamline operations,
+  <span className="text-orange-600"> enhance data security</span>, and unlock <span className="text-orange-600">new opportunities.</span>
+</p>
+<HorizontalLine/>
+      </>
   );
   };
   
