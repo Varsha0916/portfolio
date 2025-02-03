@@ -66,6 +66,7 @@ const AimlServices = () => {
       return (
         <div
           key={index}
+          data-testid="service-card"
           className="group relative w-full max-w-[274.5px] h-auto bg-[#FFFFFF0D] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-0 mx-auto hover:border-2 hover:border-blue-500"
         >
           {/* Icon container */}
@@ -284,7 +285,7 @@ const AimlServices = () => {
       
       <div className="flex flex-col items-center flex-1">
         <h3 className="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
-          Access To Cutting-<br />Edge <span class="text-orange-500">Technology</span>
+          Access To Cutting-<br />Edge <span className="text-orange-500">Technology</span>
         </h3>
         <hr className="w-full h-[2px] border-t border-[#86868B] my-4" />
         <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left">
@@ -295,7 +296,7 @@ const AimlServices = () => {
 
       <div className="flex flex-col items-center flex-1">
         <h3 className="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
-          Data-Driven <span class="text-orange-500">Decision Making</span>
+          Data-Driven <span className="text-orange-500">Decision Making</span>
         </h3>
         <hr className="w-full h-[2px] border-t border-[#86868B] my-4" />
         <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left">
@@ -306,7 +307,7 @@ const AimlServices = () => {
 
       <div className="flex flex-col items-center flex-1">
         <h3 className="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
-          Focus on Core <span class="text-orange-500">Competencies</span>
+          Focus on Core <span className="text-orange-500">Competencies</span>
         </h3>
         <hr className="w-full h-[2px] border-t border-[#86868B] my-4" />
         <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left">
@@ -317,7 +318,7 @@ const AimlServices = () => {
 
       <div className="flex flex-col items-center flex-1">
         <h3 className="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
-          Expert Digital <br /><span class="text-orange-500">Solutions</span>
+          Expert Digital <br /><span className="text-orange-500">Solutions</span>
         </h3>
         <hr className="w-full h-[2px] border-t border-[#86868B] my-4" />
         <p className="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left">

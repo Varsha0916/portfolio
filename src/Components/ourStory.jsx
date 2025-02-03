@@ -114,10 +114,10 @@ const ourStory = () => {
   <>   
   {/*our story part 1 */}  
   <HorizontalLine/>
-  <h1 className="flex flex-wrap justify-center sm:justify-start text-center sm:text-left underline text-[24px] sm:text-[28px] md:text-[32px] mt-[50px] sm:mt-[100px] md:mt-[50px] text-white">
+  <h1 data-testid="our-story-section" className="flex flex-wrap justify-center sm:justify-start text-center sm:text-left underline text-[24px] sm:text-[28px] md:text-[32px] mt-[50px] sm:mt-[100px] md:mt-[50px] text-white">
   <span className="text-[#fe5d26]">O</span>ur Story in Blockchain Technology
 </h1>
-  <div class="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
+  <div className="  inset-100 bg-radial-gradient from-orange-600/80 via-transparent to-transparent relative flex items-center justify-center h-[739.16px] w-[1000px] bg-black">
   <img 
   src="./src/assets/images/blockChain.svg" 
   alt="Centered Image" 
@@ -150,26 +150,26 @@ const ourStory = () => {
 </div>
   
   {/*our story part 2 */}
-  <div class="relative flex items-center justify-center h-[739.16px] w-full bg-black">
-  <div class="absolute inset-0 bg-radial-gradient from-orange-600/80 via-transparent to-transparent"></div>
-  <div class="relative w-full h-full">
+  <div className="relative flex items-center justify-center h-[739.16px] w-full bg-black">
+  <div className="absolute inset-0 bg-radial-gradient from-orange-600/80 via-transparent to-transparent"></div>
+  <div className="relative w-full h-full">
     
     <img
       src="./src/assets/images/ourStory/os1.svg"
       alt="Top Left Decoration"
-      class="absolute top-4 left-0 w-[80px] sm:w-[100px] md:w-[120px] lg:w-[141px] h-auto"
+      className="absolute top-4 left-0 w-[80px] sm:w-[100px] md:w-[120px] lg:w-[141px] h-auto"
     />
    
     <img
       src="./src/assets/images/ourStory/os2.svg"
       alt="Blockchain Centered"
-      class="z-10 w-[250px] sm:w-[350px] md:w-[400px] lg:w-[486.12px] h-auto mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      className="z-10 w-[250px] sm:w-[350px] md:w-[400px] lg:w-[486.12px] h-auto mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
     />
 
     <img
       src="./src/assets/images/ourStory/os3.svg"
       alt="Bottom Right Decoration"
-      class="absolute bottom-4 right-0 w-[100px] sm:w-[150px] md:w-[175px] lg:w-[195px] h-auto"
+      className="absolute bottom-4 right-0 w-[100px] sm:w-[150px] md:w-[175px] lg:w-[195px] h-auto"
     />
   </div>
 </div>

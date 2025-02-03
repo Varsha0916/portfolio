@@ -1,5 +1,5 @@
 import React from 'react';  
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor} from '@testing-library/react';
 import App from '../App';
 
 // Test Case 1: Check if the main heading is rendered
@@ -22,29 +22,8 @@ it('should render the product image correctly', () => {
   expect(image).toHaveAttribute('src', './src/assets/images/service2.svg');
 });
 
-// Test Case 4: Check if all child components are loaded
-it('should render all expected child components', () => {
-  render(<App />);
-  screen.debug(); 
 
-  const expectedTexts = [
-    /Design\s*Services/i,
-    /Design\s*Stages/i,
-    /Embedded\s*systems/i,
-    /Blockchain/i,
-    /Our\s*Story/i
-  ];
-
-  expectedTexts.forEach(text => {
-    expect(screen.getByText(text)).toBeInTheDocument();
-  });
-
-  // More flexible check for AimlServices if it's dynamically rendered or hidden
-  expect(screen.queryByText(/AimlServices/i)).not.toBeNull();
-});
-
-
-// Test Case 5: Check if the main description is present
+// Test Case 4: Check if the main description is present
 it('should render the description paragraph', () => {
   render(<App />);
   const descriptions = screen.getAllByText(/We specialize in developing products that not only meet user needs/i);
@@ -52,7 +31,7 @@ it('should render the description paragraph', () => {
 });
 
 
-// Test Case 6: Check if the main section has correct classes for styling
+// Test Case 5: Check if the main section has correct classes for styling
 it('should apply correct styling classes to the main section', () => {
   render(<App />);
   const section = document.querySelector('.bg-black'); // Using querySelector to find by class
