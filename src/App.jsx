@@ -77,7 +77,7 @@ id="about"
         {/* Image Section */}
         <div className="md:w-1/2  flex justify-center mt-30 ">
           <img
-            src="/src/images/varsha.png" 
+            src="/images/varsha.png" 
             alt="Varsha"
             className="w-[300px] h-[250px] md:h-[450px]  object-cover rounded-[10px]  shadow-[0_0_30px_#f8f3d9]"
           />
@@ -94,11 +94,11 @@ id="about"
     
     {/* Skill Card */}
     {[
-      { img: "/src/images/html.png", title: "HTML", text: "I am eager to deepen my understanding of advanced HTML features, including semantic tags, forms, and accessibility enhancements." },
-      { img: "/src/images/css.png", title: "CSS", text: "I worked on a project where I utilized CSS to design and style a visually appealing and responsive webpage." },
-      { img: "/src/images/java.png", title: "Java", text: "I have a strong foundation in Java and am proficient in solving programming problems using its core concepts." },
-      { img: "/src/images/react.png", title: "React.js", text: "I recently started learning React.js to enhance my skills for a project. During this process, I have been focusing on understanding key concepts." },
-      { img: "/src/images/c.png", title: "C", text: "C was the first programming language that I learned as a part of my academic syllabus, providing me with a strong foundation in programming." }
+      { img: "/images/html.png", title: "HTML", text: "I am eager to deepen my understanding of advanced HTML features, including semantic tags, forms, and accessibility enhancements." },
+      { img: "/images/css.png", title: "CSS", text: "I worked on a project where I utilized CSS to design and style a visually appealing and responsive webpage." },
+      { img: "/images/java.png", title: "Java", text: "I have a strong foundation in Java and am proficient in solving programming problems using its core concepts." },
+      { img: "/images/react.png", title: "React.js", text: "I recently started learning React.js to enhance my skills for a project. During this process, I have been focusing on understanding key concepts." },
+      { img: "/images/c.png", title: "C", text: "C was the first programming language that I learned as a part of my academic syllabus, providing me with a strong foundation in programming." }
     ].map((skill, index) => (
       <div key={index} className="flex justify-center">
         <div className="bg-[#504b38] text-[#fdf6db] p-6 rounded-lg shadow-lg flex flex-col hover:-translate-y-1 hover:shadow-2xl items-center w-80 h-80">
@@ -119,16 +119,16 @@ id="about"
       <section id="contact" className="pt-20 py-10 bg-[#504b38]  text-[#fdf6db] text-center">
         <div className="flex justify-center space-x-6">
           <a href="mailto:varshakrishnakumar16@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="/src/images/fmail.png" alt="Email" className="w-10 h-10 hover:scale-110 transition-transform" />
+            <img src="/images/fmail.png" alt="Email" className="w-10 h-10 hover:scale-110 transition-transform" />
           </a>
           <a href="tel:+9965933531">
-            <img src="/src/images/fphone.png" alt="Phone" className="w-10 h-10 hover:scale-110 transition-transform" />
+            <img src="/images/fphone.png" alt="Phone" className="w-10 h-10 hover:scale-110 transition-transform" />
           </a>
           <a href="https://www.linkedin.com/in/varsha1603" target="_blank" rel="noopener noreferrer">
-            <img src="/src/images/flinkedin.png" alt="LinkedIn" className="w-10 h-10 hover:scale-110 transition-transform" />
+            <img src="/images/flinkedin.png" alt="LinkedIn" className="w-10 h-10 hover:scale-110 transition-transform" />
           </a>
           <a href="https://github.com/Varsha0916" target="_blank" rel="noopener noreferrer">
-            <img src="/src/images/fgithub.png" alt="GitHub" className="w-10 h-10 hover:scale-110 transition-transform" />
+            <img src="/images/fgithub.png" alt="GitHub" className="w-10 h-10 hover:scale-110 transition-transform" />
           </a>
         </div>
         <p className="mt-4">© 2025 Varsha | All Rights Reserved</p>
